@@ -21,8 +21,6 @@ code {
 :root {
 	--color3: #00203FFF;
 	--color0: rgba(173, 239, 209, 0.778);
-	/* --color3: #101820FF;
-	--color0: rgba(254, 231, 21, 0.704); */
 }
 
 .flex-col {
@@ -65,7 +63,6 @@ nav {
 }
 
 .nav-item:hover {
-	/* background-color: rgb(0, 0, 0, 0.4); */
 	background-color: rgb(12, 12, 12);
 }
 
@@ -82,9 +79,9 @@ nav {
 	color: var(--color0);
 	padding: 20vh 10vw;
 	word-wrap: break-word;
+	text-align: center;
 }
 .body > h2 {
-	text-align: center;
 	padding: 2rem;
 	font-size: 2rem;
 	font-family: 'Roboto', 'Oxygen',

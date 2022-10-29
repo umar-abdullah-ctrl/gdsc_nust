@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react'
 export const Nav = () => {
 	const smallScreen = useWindowDimensions();  // returns true or false
 	const [show_items, setShowHidden] = useState(false);
+	const n_links = 5;
 
 	return (
 		<nav>
 			<div className={smallScreen?'flex-col':'flex-row'}>
 				<div className='nav-item'>Home</div>
 				<div className={smallScreen?'flex-col':'flex-row'}>
-					{Array.from(Array(5).keys()).map((item, i)=>{
+					{Array.from(Array(n_links).keys()).map((item, i)=>{
 						return(
 						<div
 							key={i}
