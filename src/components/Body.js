@@ -10,6 +10,7 @@ export const Body = () => {
 	}
 	return (
 		<div className='body'>
+			<h2>Data Fetched From a test API</h2>
 			{JSON.stringify(data)}
 		</div>
 	)
