@@ -9,9 +9,15 @@ export const Nav = () => {
 			<div className={smallScreen?'flex-col':'flex-row'}>
 				<div className='nav-item'>Home</div>
 				<div className={smallScreen?'flex-col':'flex-row'}>
-					<div hidden={!show_items && smallScreen} className='nav-item'>Link1</div>
-					<div hidden={!show_items && smallScreen} className='nav-item'>Link2</div>
-					<div hidden={!show_items && smallScreen} className='nav-item'>Link3</div>
+					{Array.from(Array(5).keys()).map((item, i)=>{
+						return(
+						<div
+							key={i}
+							hidden={!show_items && smallScreen}
+							className='nav-item'>Link{i+1}
+						</div>
+						)
+					})}
 				</div>
 			</div>
 			<div className='nav-btn' onClick={()=>{setShowHidden(!show_items)}} hidden={!smallScreen}> <img src="/drop_icon.png" alt="" /> </div>
